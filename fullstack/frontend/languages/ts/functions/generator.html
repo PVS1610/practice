@@ -1,0 +1,14 @@
+<script>
+    function* iceCreamGiver()
+    {
+        yield "one scoop of icecream"
+        yield "two scoop of icecream"
+        yield "3 scoop of icecream--extra warning"
+    }
+    let praveen=iceCreamGiver()
+    console.log("praveen-",praveen.next())
+    console.log("praveen-",praveen.next())
+    console.log("praveen-",praveen.next())
+    console.log("praveen--",praveen.next())
+
+</script>
