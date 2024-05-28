@@ -1,0 +1,36 @@
+<center>
+    <h1>Guessing Game of Days</h1>
+    <h1 id="root"></h1>
+    <button onclick="ran()">Click me to get random day</button>
+</center>
+
+<script>
+    function ran()
+    {
+        let day=Math.floor(Math.random()*7+1)
+        switch(day)
+        {
+            case 1:
+            root.innerText="Monday"
+            break;
+            case 2:
+            root.innerText="Tuesday"
+            break;
+            case 3:
+            root.innerText="Wednesday"
+            break;
+            case 4:
+            root.innerText="Thursday"
+            break;
+            case 5:
+            root.innerText="Friday"
+            break;
+            case 6:
+            root.innerText="Saturday"
+            break;
+            case 7:
+            root.innerText="Sunday"
+            break;
+        }
+    }
+</script>
