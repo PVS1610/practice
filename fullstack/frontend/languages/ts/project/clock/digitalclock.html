@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 id="root">
+
+        </h1>
+    </center>
+
+    <script>
+        let h1=document.getElementById('root')
+        let sec=0
+        let minute=0
+        
+
+        setInterval(()=>{
+            h1.innerHTML=`minute:${minute}---sec:${sec++}`
+            if(sec==3) 
+            {
+                sec=0
+                minute++
+            }
+        },1000)
+    </script>
+</body>
+</html>
