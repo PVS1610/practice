@@ -1,0 +1,11 @@
+<script>
+    let allItems= [
+        {a:'apple',price:200},
+        {a:'apple',price:200,mango:100},
+        {a:'apple',price:200,mango:100,orange:300}
+    ]
+    let data= allItems.find((room)=>{return room.orange==300;})
+    console.log(data)
+    let data1= allItems.filter((room)=>{return room.mango==100})
+    console.log(data1)
+</script>
