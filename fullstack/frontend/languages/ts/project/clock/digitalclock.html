@@ -16,16 +16,22 @@
         let h1=document.getElementById('root')
         let sec=0
         let minute=0
-        
+        let hours=0
 
         setInterval(()=>{
-            h1.innerHTML=`minute:${minute}---sec:${sec++}`
+            h1.innerHTML=`hours:${hours}---minute:${minute}---sec:${sec++}`
             if(sec==3) 
             {
                 sec=0
                 minute++
             }
+            if(minute==3)
+            {
+                minute=0;
+                hours++
+            }
         },1000)
+
     </script>
 </body>
 </html>

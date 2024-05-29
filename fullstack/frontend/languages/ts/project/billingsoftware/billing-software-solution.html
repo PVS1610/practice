@@ -1,0 +1,13 @@
+<script>
+   let p1=new Promise((res,not)=>{
+        setTimeout(() => {
+            res(200)
+        }, 4000);
+    })
+
+    let p2=300
+    let p3=500
+    
+    p1.then((e)=>{console.log(e+p2+p3)}) 
+   
+</script>
