@@ -1,0 +1,13 @@
+<script>
+    async function sraPro(){
+    let saraPromise=new Promise((fullfill,nff)=>{
+        setTimeout(()=>{
+            fullfill("yes sara giving party")
+            //nff("very bad sara")
+        },2000)
+    })
+    console.log(await saraPromise)
+}
+sraPro()
+
+</script>

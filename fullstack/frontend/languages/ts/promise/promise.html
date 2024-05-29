@@ -1,0 +1,11 @@
+<script>
+    let saraPromise=new Promise((fullfill,nff)=>{
+        setTimeout(()=>{
+            //fullfill("yes sara giving party")
+            nff("very bad sara")
+        },2000)
+    })
+    console.log(saraPromise)
+    saraPromise.then((g)=>{console.log(g)})
+    saraPromise.catch((g)=>{console.log(g)})
+</script>
